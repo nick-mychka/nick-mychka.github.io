@@ -1,0 +1,412 @@
+@import "fonts"
+@import "assist"
+
+body, html
+	height: 100%
+	margin: 0
+	color: #677897
+	font: 16px/1 "effra", Arial, Helvetica, sans-serif
+	font-weight: 400
+	min-width: 320px
+
+//heder first screen
+
+header
+	display: flex
+	flex-direction: column
+	max-width: 1600px
+	margin: 0 auto
+	background: url(../img/hero_img.png)no-repeat top center / cover
+	height: 1024px
+	color: #fff
+
+	a 
+		color: #fff
+		text-decoration: none
+		font-size: 16px
+	
+.hero_head
+	height: 100px
+	padding-left: 4.5%
+
+.logo
+	font: 18px Arial
+	letter-spacing: 0.7px
+	padding: 0 10px 0 44px	
+
+	a
+		display: block
+		position: relative
+		height: 50px
+		line-height: 50px
+		
+		img
+			position: absolute
+			width: 30px
+			height: 40px
+			top: 4px
+			left: -44px
+
+nav
+	width: 25%
+
+	ul
+		list-style: none
+		padding-left: 0
+		
+		li
+			a
+				transition: all 0.15s ease-in
+				padding: 8px 3px
+
+				&:hover
+    			border-bottom: 2px solid #fff
+    			border-radius: 0 0 2px 2px
+
+.get_started_btn
+	margin: 0 2.5%
+
+	a
+		position: relative
+		display: block
+		width: 149px
+		height: 48px
+		line-height: 48px
+		border: 1px solid #fff
+		border-radius: 50px
+		text-align: center
+		
+.btn
+	position: relative
+
+button
+	width: 188px
+	height: 60px
+	color: #fff
+	font-size: 16px
+	text-shadow: 0 2px 4px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.5)
+	box-shadow: 0 8px 17px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.1), inset 0 1px 3px rgba(0,0,0,0.5), inset 0 1px 3px rgba(0,0,0,0.5) 
+	background: rgba(68, 111, 221, 1)
+	border: none
+	border-radius: 4px
+	cursor: pointer
+	transition: all 0.3s
+
+	&:hover
+		box-shadow: 0 9px 18px rgba(0,0,0,0.3), 0 6px 12px rgba(0,0,0,0.3), inset 0 1px 3px rgba(0,0,0,0.5), inset 0 1px 3px rgba(0,0,0,0.5)
+
+	&:active
+		box-shadow: 0 9px 18px rgba(0,0,0,0.15), 0 6px 12px rgba(0,0,0,0.15), inset 0 1px 3px rgba(0,0,0,0.5), inset 0 1px 3px rgba(0,0,0,0.5)
+
+	&:focus
+		outline: none
+
+p
+	font-size: 22px
+	opacity: 0.8
+	line-height: 1.8
+
+.hero_text 
+	margin-top: 10rem
+
+	h1
+		font-size: 52px
+		letter-spacing: -2px
+		margin-bottom: 25px
+
+	p
+		max-width: 850px
+		line-height: 1.9
+		padding: 0 20px
+
+
+.zip_code
+	margin-top: 4rem
+
+	button
+		background-color: #132638
+
+input[type="text"]
+	height: 58px
+	width: 184px
+	margin-right: 10px
+	border: 1px solid #cdd6df
+	border-radius: 4px
+	background-color: rgba(255, 255, 255, 0.05)
+	padding: 0 20px
+	color: #fff
+	&::-webkit-input-placeholder
+		color: #fff
+		text-shadow: 0 1px 2px rgba(0,0,0,0.5), 0 0.5px 1.5px rgba(0,0,0,0.3)
+		opacity: 0.8
+	&:-moz-placeholder
+		color: #fff
+		text-shadow: 0 1px 2px rgba(0,0,0,0.5), 0 0.5px 1.5px rgba(0,0,0,0.3)
+		opacity: 0.8
+	&:-ms-input-placeholder
+		color: #fff
+		text-shadow: 0 1px 2px rgba(0,0,0,0.5), 0 0.5px 1.5px rgba(0,0,0,0.3)
+		opacity: 0.8
+	&:focus
+		outline: none
+
+section
+	margin: 0 auto
+
+#description
+	max-width: 1136px
+	padding: 0 20px
+
+h2
+	font-size: 42px
+	margin-bottom: 5px
+	letter-spacing: -1.6px
+	opacity: 0.8
+
+.title p
+	max-width: 850px
+	padding: 0 20px
+
+.calc_icon
+	width: 155px
+	padding: 6rem 0 4rem
+	position: relative
+	
+	&::after
+		content: ""
+		position: absolute
+		width: 5px
+		height: 1893px
+		left: 75px
+		top: 240px
+		background: -webkit-linear-gradient(#f38281, #fce38a)
+		background: -o-linear-gradient(#f38281, #fce38a)
+		background: linear-gradient(#f38281, #fce38a)
+
+.wrap_description_content
+	width: 100%
+	margin-bottom: -55px
+
+.preview_group
+	width: 100%
+	margin-bottom: 187px
+
+.preview_text
+	max-width: 457px
+
+	p
+		font-size: 20px
+		line-height: 1.6	
+
+.preview_img
+	width: 457px
+	border-radius: 4px
+	
+	img
+		max-width: 384px
+
+.wrap_circle
+	width: 110px
+	display: flex
+	justify-content: center
+	align-items: center
+
+.circle
+	background-color: #fff
+	z-index: 1
+	width: 26px
+	height: 26px
+	border: 5px solid #f38281
+	border-radius: 50%
+
+.circle_core
+	background-color: #fce38a
+	width: 30px
+	height: 30px
+	border-radius: 50%
+
+.shadow_one
+	border-radius: 50%
+	border: solid 10px rgba(252, 227, 138, 0.6)
+
+.shadow_two
+	border-radius: 50%
+	border: solid 10px rgba(252, 227, 138, 0.4)
+
+.shadow_three
+	border-radius: 50%
+	border: solid 20px rgba(252, 227, 138, 0.15)
+
+#results
+	max-width: 1600px
+	background: url(../img/result_bg.png)no-repeat top center
+
+.title_result
+	padding: 7.5rem 0 4.5rem
+
+	h3
+		font-size: 36px
+		margin: 0.5rem 0 0
+
+span
+	color: #f38281
+	text-transform: uppercase
+	font-size: 16px
+	letter-spacing: 2px
+
+.emulation_sheet
+	width: 98%
+	height: 1053px
+	position: relative
+	padding: 0 1%
+
+	.sheet
+		position: absolute
+		width: 595px
+		height: 843px
+		background-color: #fff
+		box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.1), 0 40px 77px 0 rgba(0, 0, 0, 0.1)
+		transition: all 0.3s ease-in-out
+		&:hover
+			z-index: 3
+			box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.2)
+	.emulation_1
+		top: 44px
+		left: 24%
+	.emulation_2
+		top: 0
+		left: 39%
+		z-index: 1
+	.emulation_3
+		top: 98px
+		left: 31%
+		z-index: 2
+
+#free_report
+	max-width: 1016px
+	padding: 0 20px
+
+.wrap_report_top
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
+	padding: 0.5rem 0 9rem
+
+.report_content
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	color: #37474f
+
+	.title		
+		p
+			padding-left: 0
+
+	h2
+		margin-bottom: 13px
+		opacity: 1
+
+	.zip_code
+		margin-top: 3.5rem
+
+		input[type="text"]
+			width: 158px
+			color: #8898aa
+			&::-webkit-input-placeholder
+				color: #8898aa
+				text-shadow: 0 1.5px 0.5px rgba(0,0,0,0.3)
+			&:-moz-placeholder
+				color: #8898aa
+				text-shadow: 0 1.5px 0.5px rgba(0,0,0,0.3)
+			&:-ms-input-placeholder
+				color: #8898aa
+				text-shadow: 0 1.5px 0.5px rgba(0,0,0,0.3)
+		button
+			width: 250px
+
+.map_point
+	margin-right: 34px
+	width: 264px
+	height: 236px
+	background: url(../img/map_point.svg)no-repeat
+
+.banner
+	border-radius: 4px
+	background: rgb(246, 249, 252)
+	
+	img
+		width: 100%
+
+footer
+	color: #8898aa
+	background: #f6f9fc
+	border-top: 0.5px solid #fff
+
+.wrap_footer
+	max-width: 1140px
+	margin: 0 auto
+	padding: 0 20px
+	
+.top_footer
+	border-bottom: 1px solid rgba(151, 151, 151, 0.3)
+	padding: 52px 5px 45px 17px
+
+.footer_logo
+	background: url(../img/footer_logo.svg)no-repeat
+	padding: 11px 0 11px 45px
+	font: 18px Arial
+
+.footer_nav
+	width: 37%
+
+	ul
+		align-items: flex-start
+		text-align: center
+		list-style: none
+		padding-left: 0
+		
+		li 
+			width: 62px
+
+			a 
+				color: #8898aa
+				text-decoration: none
+
+.footer_get_started_btn
+	border-radius: 4px
+
+.copyright
+	display: flex
+	justify-content: center
+	padding: 45px 0 
+	color: #6c839b
+	opacity: 0.8
+	line-height: 1.5
+
+.burst
+	max-width: 0px
+	max-height: 0px
+	width: 0px
+	height: 0px
+	border-radius: 50%
+	background: #F6F9FC
+	opacity: 0.1
+	top: 0px
+	left: 0px
+	position: absolute
+	display: inline-block
+	-webkit-transform: translateX(-50%) translateY(-50%)
+					transform: translateX(-50%) translateY(-50%)
+	pointer-events: none
+	-webkit-transition: width 0.5s ease-in-out,height 0.5s ease-in-out,opacity 0.5s ease-in-out
+	transition: width 0.5s ease-in-out,height 0.5s ease-in-out,opacity 0.5s ease-in-out
+	z-index: 1
+
+.burst.grow
+	max-width: 100000px
+	max-height: 100000px
+	opacity: 0.5
+
+.burst.fade 
+	opacity: 0

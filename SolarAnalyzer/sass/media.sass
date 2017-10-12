@@ -1,0 +1,342 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+
+	nav
+		width: 35% 
+	
+	.emulation_sheet
+		.emulation_1
+			left: 18%
+		.emulation_2
+			left: 33%
+		.emulation_3
+			left: 25%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) 
+	
+	.md_disp_n
+		display: none
+		
+	nav
+		width: 40% 
+		
+	.calc_icon
+		margin-left: 20px
+		&:after
+			height: 2322px
+
+	.wrap_circle
+		display: none
+			
+	.wrap_left_circle
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-left: 30px
+		padding: 37px 50px
+
+	.preview_group
+		flex-direction: column
+		margin-bottom: 100px
+	
+	.preview_text
+		text-align: center
+
+	.preview_img
+		justify-content: center
+		width: auto
+		
+		img
+			width: 95%
+	.change_order
+		order: -1
+
+	.shadow
+		justify-content: flex-start
+		margin-left: 42px
+
+	.emulation_sheet
+		.emulation_1
+			display: none
+		.emulation_2
+			left: 19%
+		.emulation_3
+			left: 13%
+
+	.wrap_report_top
+		justify-content: center
+		align-items: center
+	
+	.report_content
+		align-items: center
+		text-align: center
+		
+	.map_point_in
+		display: block
+		width: 264px
+		height: 236px
+		background: url(../img/map_point.svg)no-repeat
+
+	.footer_nav
+		width: 40%
+
+	.copyright
+		padding: 35px 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) 
+	
+	.sm_disp_n
+		display: none
+		
+	.burger_nav
+		margin-right: 3%
+		display: inline-block
+		cursor: pointer
+		&:hover
+			opacity: 0.8
+
+	.bar1, .bar2, .bar3
+		width: 35px
+		height: 5px
+		background-color: #fff
+		border-radius: 5px
+		margin: 6px 0
+		transition: 0.4s
+
+	/* Rotate first bar */
+	.open_in .bar1
+		-webkit-transform: rotate(-50deg) translate(-9px, 6px)
+		transform: rotate(-50deg) translate(-9px, 6px)
+
+	/* Fade out the second bar */
+	.open_in .bar2
+		opacity: 0
+
+	/* Rotate last bar */
+	.open_in .bar3
+		-webkit-transform: rotate(45deg) translate(-8px, -8px)
+		transform: rotate(45deg) translate(-8px, -8px)
+
+	.hero_head 
+		position: relative
+
+	nav
+		position: absolute
+		z-index: 1
+		top: 80px
+		left: -100%
+		width: 100%
+		padding: 0
+		transition: all 0.8s ease-in-out
+		opacity: 0.1
+
+		ul 
+			flex-direction: column
+			padding: 0
+
+			li 
+				width: 100% 
+				box-shadow: inset 0 1px 3px rgba(0,0,0,0.5)
+
+				a 
+					width: 100%
+					display: block
+					margin: 0 auto
+					background: rgba(128, 103, 72, 0.55)
+					color: rgba(19, 38, 56, 0.9)
+					padding: 25px 0
+					text-align: center
+					text-shadow: 0 1.5px 0.5px rgba(255, 255, 255, 0.4)
+					text-transform: uppercase
+					border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+
+					&:hover
+						color: #fff
+						border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+						border-radius: 0
+						background: rgba(128, 103, 72, 0.75)
+	
+	.get_started_menu
+		display: block
+		
+		a
+			text-transform: none
+			background: rgba(255, 255, 255, 0.9)
+			text-shadow: 0 0.5px 1.5px rgba(0, 0, 0, 0.3)
+			&:hover
+				color: rgba(19, 38, 56, 0.9)
+				background: rgba(255, 255, 255, 0.8)
+				text-shadow: 0 0.5px 1.5px rgba(0, 0, 0, 0.4)
+				box-shadow: inset 0 -0.5px 3px rgba(0,0,0,0.3)
+	
+	.slide_menu
+		left: 0
+		opacity: 1
+	p
+		font-size: 21px
+		line-height: 1.7
+
+	.hero_text 
+		margin-top: 5rem
+
+		h1 
+			font-size: 51px
+			padding: 0 15px
+
+		p
+			line-height: 1.7
+
+	.title p
+		max-width: 850px
+		padding: 0 15px
+
+	h2
+		font-size: 41px
+
+	.zip_code
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-top: 2rem
+
+		input[type="text"]
+			margin-right: 0
+			margin-bottom: 25px
+		
+	.calc_icon
+		margin-left: 5px
+		padding: 4rem 0 3rem
+		&:after
+			top: 217px
+			height: 2385px
+			z-index: -1
+
+	.wrap_left_circle
+		margin-left: 15px
+
+	.shadow
+		margin-left: 28px
+
+	.preview_text 
+		p
+			font-size: 19px
+
+	.emulation_sheet
+		height: auto
+		padding-bottom: 7rem
+
+		.emulation_2
+			position: static
+			width: 81%
+			height: auto
+			display: block
+			margin: 0 auto
+			
+			img
+				width: 100%
+
+		.emulation_3
+			display: none
+	
+
+	.top_footer
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	.footer_nav
+		width: 85%
+		padding: 25px 0
+		ul
+			li 
+				width: 100px
+
+	.copyright
+		padding: 25px 0		
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) 
+
+	p
+		font-size: 19px
+		line-height: 1.5
+
+	.hero_text 
+		margin-top: 4rem
+
+		h1 
+			font-size: 49px
+
+		p
+			line-height: 1.5
+
+	h2
+		font-size: 39px
+
+	#description
+		.title h2
+			margin: 0 0 10px
+
+	.calc_icon
+		&:after
+			left: 47px
+			top: 212px
+			height: 2385px
+			z-index: -1
+
+	.wrap_left_circle
+		margin-left: 0
+		padding: 37px
+
+	.shadow
+		margin-left: 0
+
+	.title_result h3
+		text-align: center
+		font-size: 34px
+
+	.wrap_report_top
+		padding: 0.5rem 0 5rem
+
+	.top_footer
+		padding: 52px 0 45px 0
+
+	.footer_nav
+		width: 100%
+		padding: 25px 0
+		ul
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			li 
+				width: 100%
+				a 
+					display: block
+					width: 100%
+					padding: 15px 0
+					text-align: center
+					background: rgba(255, 255, 255, 0.15)
+					border-bottom: 1px solid rgba(218, 220, 222, 0.5)				
+
+	.copyright
+		padding: 20px 0	25px
+		font-size: 12px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) 
+
+	#description
+		.title
+			margin-top: -50px
+	.calc_icon
+		margin: 0 auto
+		&:after
+			display: none
+			
+	.wrap_left_circle, .shadow, .banner
+		display: none
+	
