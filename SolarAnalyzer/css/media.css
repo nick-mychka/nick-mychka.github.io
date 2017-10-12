@@ -356,14 +356,18 @@
   #description .title h2 {
     margin: 0 0 10px;
   }
-  .calc_icon {
-    margin: 0 auto;
-  }
   .calc_icon:after {
-    display: none;
+    left: 47px;
+    top: 212px;
+    height: 2385px;
+    z-index: -1;
   }
-  .wrap_left_circle, .shadow {
-    display: none;
+  .wrap_left_circle {
+    margin-left: 0;
+    padding: 37px;
+  }
+  .shadow {
+    margin-left: 0;
   }
   .title_result h3 {
     text-align: center;
@@ -411,12 +415,23 @@
   }
 }
 
+@media only screen and (max-width: 320px) {
+
+  .calc_icon {
+    margin: 0 auto;
+  }
+  .calc_icon:after {
+    display: none;
+  }
+  .wrap_left_circle, .shadow, .banner {
+    display: none;
+  }
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
+  
   #description .title {
     margin-top: -50px;
-  }
-  .banner {
-    display: none;
   }
 }
